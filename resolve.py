@@ -8,10 +8,10 @@ def resolve(x, y, w, h):
 
     # Upper-left corner
     if n < s:
-        return t(n) + x
+        return t(n) + x + 1
     # Bottom-right corner
     elif m < s:
-        return w * h - t(m + 1) + ny
+        return w * h - t(m + 1) + ny + 1
     # Anything else
     else:
-        return t(s) + (n - s) * (s + 1) + sh
+        return t(s) + (n - s) * (s + 1) + sh + 1
